@@ -1,92 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheSuftSocials</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LogsHub | Digital Marketplace</title>
+
+    <meta name="description"
+          content="Buy premium digital products, social media accounts, SMS verification numbers, boosting services and more.">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Remix Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+          rel="stylesheet">
+
 </head>
+
 <body>
 
-    <!-- Overlay -->
+    <!-- ===========================
+         PAGE OVERLAY
+    ============================ -->
+
     <div id="overlay"></div>
 
-    <!-- Sidebar -->
+    <!-- ===========================
+         SIDEBAR
+    ============================ -->
+
     <aside id="sidebar">
 
         <div class="sidebar-header">
-            <h2>TheSuftSocials</h2>
+
+            <h2>LogsHub</h2>
+
             <button id="closeMenu">
+
                 <i class="ri-close-line"></i>
+
             </button>
+
         </div>
 
         <nav>
 
             <a href="index.html">
+
                 <i class="ri-home-5-line"></i>
-                Home
+
+                <span>Home</span>
+
             </a>
 
-            <a href="#">
-                <i class="ri-apps-line"></i>
-                Categories
+            <a href="#categories">
+
+                <i class="ri-apps-2-line"></i>
+
+                <span>Categories</span>
+
             </a>
 
-            <a href="#">
-                <i class="ri-customer-service-2-line"></i>
-                Support
+            <a href="#featuredProducts">
+
+                <i class="ri-fire-line"></i>
+
+                <span>Featured</span>
+
+            </a>
+
+            <a href="#latestProducts">
+
+                <i class="ri-time-line"></i>
+
+                <span>Latest</span>
+
             </a>
 
             <hr>
 
-            <!-- Hidden when logged in -->
+            <!-- Guest Menu -->
+
             <div id="guestMenu">
 
                 <a href="pages/login.html">
+
                     <i class="ri-login-box-line"></i>
-                    Login
+
+                    <span>Sign In</span>
+
                 </a>
 
                 <a href="pages/register.html">
+
                     <i class="ri-user-add-line"></i>
-                    Register
+
+                    <span>Create Account</span>
+
                 </a>
 
             </div>
 
-            <!-- Hidden when logged out -->
+            <!-- User Menu -->
+
             <div id="userMenu">
 
                 <a href="pages/profile.html">
+
                     <i class="ri-user-line"></i>
-                    Profile
+
+                    <span>Profile</span>
+
                 </a>
 
                 <a href="pages/orders.html">
+
                     <i class="ri-shopping-bag-line"></i>
-                    Orders
+
+                    <span>Orders</span>
+
                 </a>
 
                 <a href="pages/wallet.html">
+
                     <i class="ri-wallet-3-line"></i>
-                    Wallet
+
+                    <span>Wallet</span>
+
                 </a>
 
                 <a href="#">
+
                     <i class="ri-notification-3-line"></i>
-                    Notifications
+
+                    <span>Notifications</span>
+
                 </a>
 
                 <a href="#">
-                    <i class="ri-logout-box-line"></i>
-                    Logout
+
+                    <i class="ri-logout-box-r-line"></i>
+
+                    <span>Logout</span>
+
                 </a>
 
             </div>
@@ -94,118 +156,126 @@
             <hr>
 
             <a href="#">
+
+                <i class="ri-customer-service-2-line"></i>
+
+                <span>Support</span>
+
+            </a>
+
+            <a href="#">
+
                 <i class="ri-information-line"></i>
-                About Us
+
+                <span>About Us</span>
+
             </a>
 
             <a href="#">
-                <i class="ri-shield-check-line"></i>
-                Privacy Policy
+
+                <i class="ri-lock-line"></i>
+
+                <span>Privacy Policy</span>
+
             </a>
 
             <a href="#">
+
                 <i class="ri-file-list-3-line"></i>
-                Terms
+
+                <span>Terms & Conditions</span>
+
             </a>
 
         </nav>
 
     </aside>
 
-    <!-- Header -->
+    <!-- ===========================
+         HEADER
+    ============================ -->
+
     <header>
 
         <button id="menuBtn">
+
             <i class="ri-menu-line"></i>
+
         </button>
 
         <div class="logo">
-            TheSuftSocials
+
+            <h2>LogsHub</h2>
+
         </div>
 
-        <div class="header-icons">
+        <div class="header-actions">
 
-            <button>
+            <button id="searchButton">
+
                 <i class="ri-search-line"></i>
+
             </button>
 
-            <button>
+            <button id="themeButton">
+
                 <i class="ri-sun-line"></i>
-            </button>
 
-            <button>
-                <i class="ri-shopping-cart-2-line"></i>
             </button>
 
         </div>
 
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- ===========================
+         MAIN CONTENT
+    ============================ -->
 
-        <div class="hero-content">
+    <main>
 
-            <h1>
-                Buy Premium Digital Products
-            </h1>
+        <!-- Hero Section -->
 
-            <p>
-                Social Media Accounts, SMS Numbers, Premium Logins, Boosting Services and more.
-            </p>
+        <section id="hero"></section>
 
-            <div class="hero-buttons">
+        <!-- Categories -->
 
-                <button class="primary-btn">
-                    Shop Now
-                </button>
+        <section id="categories"></section>
 
-                <button class="secondary-btn">
-                    Browse Categories
-                </button>
+        <!-- Featured Products -->
 
-            </div>
+        <section id="featuredProducts"></section>
 
-        </div>
+        <!-- Latest Products -->
 
-    </section>
+        <section id="latestProducts"></section>
 
-    <!-- Categories -->
-    <section id="categories">
+        <!-- Why Choose Us -->
 
-    </section>
+        <section id="whyChooseUs"></section>
 
-    <!-- Featured Products -->
-    <section id="featuredProducts">
+        <!-- Reviews -->
 
-    </section>
+        <section id="reviews"></section>
 
-    <!-- Latest Products -->
-    <section id="latestProducts">
+        <!-- FAQ -->
 
-    </section>
+        <section id="faq"></section>
 
-    <!-- Why Choose Us -->
-    <section id="whyChooseUs">
+    </main>
 
-    </section>
+    <!-- ===========================
+         FOOTER
+    ============================ -->
 
-    <!-- Reviews -->
-    <section id="reviews">
-
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-
-    </section>
-
-    <!-- Footer -->
     <footer>
 
     </footer>
 
-    <script type="module" src="js/index.js"></script>
+    <!-- JavaScript -->
+
+    <script type="module"
+            src="js/index.js"></script>
 
 </body>
+
 </html>
